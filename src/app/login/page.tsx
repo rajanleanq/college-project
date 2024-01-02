@@ -1,5 +1,9 @@
 import React from "react";
-import LoginComponent from "@/components/pages/auth/login";
+import type { Metadata } from "next";
+import { MetaTags } from "@/contants/meta-data";
+import LoginComponent from "@/components/pages/login";
+
+export const metadata: Metadata = MetaTags?.loginPage;
 
 export default function LoginPage() {
   return <LoginComponent />;
